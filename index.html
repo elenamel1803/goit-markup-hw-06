@@ -363,8 +363,36 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close><svg class="modal-icon" width="18p" height="18">
-          <use href="./img/icons.svg#icon-close-black"></use>
+          <use href="./img/icons.svg#icon-close"></use>
         </svg></button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+          <ul class="modal-list list">
+            <li class="modal-item">
+              <label class="modal-label" for="name">Имя</label>
+              <input class="modal-input" type="text" id="name" name="user-name">
+            </li>
+            <li class="modal-item">
+              <label class="modal-label" for="tel">Телефон</label>
+              <input class="modal-input" type="tel" id="tel" name="user-tel">
+            </li>
+            <li class="modal-item">
+              <label class="modal-label" for="mail">Почта</label>
+              <input class="modal-input" type="email" id="mail" name="user-email">
+            </li>
+            <li class="modal-item">
+              <label class="modal-label" for="msg">Комментарий</label>
+              <textarea class="modal-textarea" id="msg" name="user-message" placeholder="Введите текст"></textarea>
+            </li>
+            <li class="modal-item">
+              <input class="modal-checkbox" type="checkbox" id="" name="">
+              <label class="modal-checkbox-text" for=""><span>Соглашаюсь с рассылкой и принимаю </span><a href="" class="modal-checkbox-text-accent">Условия договора</a></label>
+            </li>
+            <li class="modal-item">
+              <button class="modal-btn" type="submit">Отправить</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
